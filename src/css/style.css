@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 #root {
   font-family: "Overpass", sans-serif;
   font-size: 15px;
@@ -62,6 +66,15 @@
   height: 2.5rem;
   color: inherit;
 }
+.card .rating-state .btn-wrapper .button-rating:hover {
+  background-color: var(--clr-medium-grey);
+}
+.card .rating-state .btn-wrapper .button-rating:focus {
+  background-color: var(--clr-orange);
+}
+.card .rating-state .btn-wrapper .button-rating:active {
+  transform: translateY(2px);
+}
 .card .rating-state .button-submit {
   background-color: var(--clr-orange);
   border: none;
@@ -73,6 +86,10 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.card .rating-state .button-submit:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-orange);
 }
 
 .thankyou-state {

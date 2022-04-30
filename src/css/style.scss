@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 // body,
 #root {
   font-family: "Overpass", sans-serif;
@@ -62,6 +66,15 @@
         width: 2.5rem;
         height: 2.5rem;
         color: inherit;
+        &:hover {
+          background-color: var(--clr-medium-grey);
+        }
+        &:focus {
+          background-color: var(--clr-orange);
+        }
+        &:active {
+          transform: translateY(2px);
+        }
       }
     }
     .button-submit {
@@ -75,6 +88,10 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1px;
+      &:hover {
+        background-color: var(--clr-white);
+        color: var(--clr-orange);
+      }
     }
   }
 }
