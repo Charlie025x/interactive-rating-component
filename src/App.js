@@ -6,14 +6,23 @@ import "./App.css";
 
 function App() {
   const [submit, setSubmit] = useState(false);
+  const [rating, setRating] = useState("");
 
   const handleSubmit = () => {
     setSubmit(true);
   };
 
+  const onClick = (e) => {
+    setRating(e);
+  };
+
   return (
     <div className="card">
-      {!submit ? <Rating handleSubmit={handleSubmit} /> : <Thankyou />}
+      {!submit ? (
+        <Rating handleSubmit={handleSubmit} onClick={onClick} />
+      ) : (
+        <Thankyou rating={rating} />
+      )}
     </div>
   );
 }

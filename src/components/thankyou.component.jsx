@@ -1,7 +1,7 @@
 export const Thankyou = ({ rating }) => {
   return (
-    <div class="thankyou-state">
-      <p class="your-rating">You selected X out of 5</p>
+    <div className="thankyou-state">
+      <p className="your-rating">You selected {rating} out of 5</p>
       {/* Add rating here */}
       <h2>Thank you!</h2>
       <p>
