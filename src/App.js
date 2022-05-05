@@ -9,7 +9,10 @@ function App() {
   const [rating, setRating] = useState("");
 
   const handleSubmit = () => {
-    setSubmit(true);
+    // prevents from pressing submit without a rating
+    if (rating) {
+      setSubmit(true);
+    }
   };
 
   const onClick = (e) => {
