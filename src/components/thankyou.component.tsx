@@ -1,4 +1,8 @@
-export const Thankyou = ({ rating }) => {
+type ThankyouProps = {
+  rating: string;
+};
+
+export const Thankyou = ({ rating }: ThankyouProps) => {
   return (
     <div className="thankyou-state">
       <p className="your-rating">You selected {rating} out of 5</p>

@@ -1,4 +1,9 @@
-function Rating({ handleSubmit, onClick }) {
+type RatingProps = {
+  handleSubmit: () => void;
+  onClick: (e: string) => void;
+};
+
+function Rating({ handleSubmit, onClick }: RatingProps) {
   return (
     <div className="rating-state">
       <h2>How did we do?</h2>
@@ -9,7 +14,7 @@ function Rating({ handleSubmit, onClick }) {
       <div className="btn-wrapper">
         <button
           onClick={() => {
-            onClick(1);
+            onClick("1");
           }}
           className="button-rating"
         >
@@ -17,7 +22,7 @@ function Rating({ handleSubmit, onClick }) {
         </button>
         <button
           onClick={() => {
-            onClick(2);
+            onClick("2");
           }}
           className="button-rating"
         >
@@ -25,7 +30,7 @@ function Rating({ handleSubmit, onClick }) {
         </button>
         <button
           onClick={() => {
-            onClick(3);
+            onClick("3");
           }}
           className="button-rating"
         >
@@ -33,7 +38,7 @@ function Rating({ handleSubmit, onClick }) {
         </button>
         <button
           onClick={() => {
-            onClick(4);
+            onClick("4");
           }}
           className="button-rating"
         >
@@ -41,7 +46,7 @@ function Rating({ handleSubmit, onClick }) {
         </button>
         <button
           onClick={() => {
-            onClick(5);
+            onClick("5");
           }}
           className="button-rating"
         >

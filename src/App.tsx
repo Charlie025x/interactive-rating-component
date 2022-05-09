@@ -15,7 +15,7 @@ function App() {
     }
   };
 
-  const onClick = (e) => {
+  const onClick = (e: string): void => {
     setRating(e);
   };
 
